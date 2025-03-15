@@ -1,0 +1,92 @@
+EESchema-LIBRARY Version 2.3  Date: 10/16/2013 7:41:13 AM
+#encoding utf-8
+#
+# CY8C424X
+#
+DEF CY8C424X IC 0 40 Y Y 1 F N
+F0 "IC" 0 0 50 H V C CNN
+F1 "CY8C424X" 0 -100 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ TQFP44
+$ENDFPLIST
+DRAW
+T 0 550 -300 47 0 0 0 ext_clk~scb1_spi_clk[1]  Normal 0 C C
+T 900 0 -1050 47 0 0 0 scb0_spi_clk  Normal 0 C C
+T 900 -100 -1000 47 0 0 0 scb0_spi_miso  Normal 0 C C
+T 900 -200 -1000 47 0 0 0 scb0_spi_mosi  Normal 0 C C
+T 0 950 -1000 47 0 0 0 scb0_spi_ssel_0  Normal 0 R C
+T 0 650 -900 47 0 0 0 scb0_spi_ssel_1  Normal 0 C C
+T 0 650 -800 47 0 0 0 scb0_spi_ssel_2  Normal 0 C C
+T 0 650 -700 47 0 0 0 scb0_spi_ssel_3  Normal 0 C C
+T 900 -250 -800 47 0 0 0 scb0_uart_rx~scb0_i2c_scl  Normal 0 C C
+T 900 -150 -800 47 0 0 0 scb0_uart_tx~scb0_i2c_sda  Normal 0 C C
+T 0 -550 0 39 0 0 0 scb1_i2c_scl~scb1_spi_mosi  Normal 0 C C
+T 900 -1100 -750 47 0 0 0 scb1_i2c_sda~scb1_spi_miso  Normal 0 C C
+T 0 650 -400 47 0 0 0 scb1_spi_miso[1]  Normal 0 C C
+T 0 650 -500 47 0 0 0 scb1_spi_mosi[1]  Normal 0 C C
+T 900 -700 -800 47 0 0 0 scb1_spi_ssel_1~tcpwm2:p  Normal 0 C C
+T 900 -600 -800 47 0 0 0 scb1_spi_ssel_2~tcpwm2:n  Normal 0 C C
+T 900 -500 -800 47 0 0 0 scb1_spi_ssel_3~tcpwm3:p  Normal 0 C C
+T 0 500 -450 47 0 0 0 scb1_uart_rx~scb1_i2c_scl  Normal 0 C C
+T 0 500 -350 47 0 0 0 scb1_uart_tx~scb1_i2c_sda  Normal 0 C C
+T 900 -800 -650 47 0 0 0 swd_clk~scb1_spi_ssel_0~tcpwm1:n  Normal 0 C C
+T 900 -900 -700 47 0 0 0 swd_io~scb1_spi_clk~tcpwm1:p  Normal 0 C C
+T 900 -1000 -1250 47 0 0 0 tcpwm0_n[0]~scb1_uart_tx  Normal 0 L C
+T 0 -600 50 39 0 0 0 tcpwm0_p[0]~scb1_uart_rx  Normal 0 C C
+T 900 600 700 47 0 0 0 tcpwm2_n[1]  Normal 0 C C
+T 900 700 950 47 0 0 0 tcpwm2_p[1]  Normal 0 R C
+T 900 -400 -1100 47 0 0 0 tcpwm3:n  Normal 0 C C
+T 900 400 700 47 0 0 0 tcpwm3_n[1]  Normal 0 C C
+T 900 500 700 47 0 0 0 tcpwm3_p[1]  Normal 0 C C
+T 0 500 -200 47 0 0 0 wakeup~scb1_spi_ssel_0[1]  Normal 0 C C
+S -1200 1200 1200 -1500 0 1 0 N
+X VSS 1 -1400 1000 200 R 50 50 1 1 B
+X P2.0 2 -1400 900 200 R 50 50 1 1 B
+X P2.1 3 -1400 800 200 R 50 50 1 1 B
+X P2.2 4 -1400 700 200 R 50 50 1 1 B
+X P2.3 5 -1400 600 200 R 50 50 1 1 B
+X P2.4_tcpwm0:p 6 -1400 500 200 R 50 50 1 1 B
+X P2.5_tcpwm0:n 7 -1400 400 200 R 50 50 1 1 B
+X P2.6_tcpwm1:p 8 -1400 300 200 R 50 50 1 1 B
+X P2.7_tcpwm1:n 9 -1400 200 200 R 50 50 1 1 B
+X VSS@1 10 -1400 100 200 R 50 50 1 1 B
+X P4.0 20 -200 -1700 200 U 50 50 1 1 B
+X P0.6 30 1400 -300 200 L 50 50 1 1 B
+X P1.3 40 400 1400 200 D 50 50 1 1 B
+X P3.0 11 -1400 0 200 R 50 50 1 1 B
+X P4.1 21 -100 -1700 200 U 50 50 1 1 B
+X P0.7 31 1400 -200 200 L 50 50 1 1 B
+X P1.4 41 300 1400 200 D 50 50 1 1 B
+X P3.1 12 -1000 -1700 200 U 50 50 1 1 B
+X P4.2 22 0 -1700 200 U 50 50 1 1 B
+X /XRES 32 1400 -100 200 L 50 50 1 1 B
+X P1.5 42 200 1400 200 D 50 50 1 1 B
+X P3.2 13 -900 -1700 200 U 50 50 1 1 B
+X P4.3 23 1400 -1000 200 L 50 50 1 1 B
+X VCCD 33 1400 0 200 L 50 50 1 1 B
+X P1.6 43 100 1400 200 D 50 50 1 1 B
+X P3.3 14 -800 -1700 200 U 50 50 1 1 B
+X P0.0 24 1400 -900 200 L 50 50 1 1 B
+X VDDD@1 34 1000 1400 200 D 50 50 1 1 B
+X P1.7 44 0 1400 200 D 50 50 1 1 B
+X P3.4 15 -700 -1700 200 U 50 50 1 1 B
+X P0.1 25 1400 -800 200 L 50 50 1 1 B
+X VDDA 35 900 1400 200 D 50 50 1 1 B
+X P3.5 16 -600 -1700 200 U 50 50 1 1 B
+X P0.2 26 1400 -700 200 L 50 50 1 1 B
+X VSSA 36 800 1400 200 D 50 50 1 1 B
+X P3.6 17 -500 -1700 200 U 50 50 1 1 B
+X P0.3 27 1400 -600 200 L 50 50 1 1 B
+X P1.0 37 700 1400 200 D 50 50 1 1 B
+X P3.7 18 -400 -1700 200 U 50 50 1 1 B
+X P0.4 28 1400 -500 200 L 50 50 1 1 B
+X P1.1 38 600 1400 200 D 50 50 1 1 B
+X VDDD 19 -300 -1700 200 U 50 50 1 1 B
+X P0.5 29 1400 -400 200 L 50 50 1 1 B
+X P1.2 39 500 1400 200 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
